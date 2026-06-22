@@ -1,0 +1,103 @@
+{
+  "basics": {
+    "name": "Wenyang Liu",
+    "label": "Computer Vision Researcher",
+    "image": "",
+    "email": "wenyang001@e.ntu.edu.sg",
+    "url": "https://wenyang001.github.io",
+    "summary": "Computer Vision researcher focused on image/video restoration, super-resolution, degradation modeling, and efficient vision models. 18 publications, 300+ citations, h-index 8.",
+    "location": {
+      "city": "Singapore",
+      "countryCode": "SG"
+    },
+    "profiles": [
+      {
+        "network": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=gksRZlMAAAAJ"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/wenyang001"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Hyundai–NTU–A*STAR Corporate Lab, NTU",
+      "position": "Research Fellow",
+      "location": "Singapore",
+      "startDate": "2025-11-01",
+      "summary": "Research on robust visual perception for smart manufacturing: open-world object detection, segmentation, and foundation model adaptation for industrial scenes.",
+      "highlights": [
+        "Develop open-world object detection and segmentation methods combining language prompts and visual references",
+        "Industrial anomaly detection and few-shot adaptation for factory AI systems"
+      ]
+    },
+    {
+      "name": "School of EEE, Nanyang Technological University",
+      "position": "Research Associate",
+      "location": "Singapore",
+      "startDate": "2021-01-01",
+      "endDate": "2025-10-31",
+      "summary": "Led research on image/video restoration, lightweight super-resolution, and corrupted multimedia recovery.",
+      "highlights": [
+        "Published in CVPR, NeurIPS, IEEE TMM, ACM MM, and JVCIR",
+        "Developed deep learning models for visual degradation: bitstream corruption, watermark noise, low-resolution inputs",
+        "Built visual and byte-level representation models for multimedia forensics"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Nanyang Technological University",
+      "location": "Singapore",
+      "area": "Electrical and Electronic Engineering",
+      "studyType": "Ph.D.",
+      "startDate": "2022-07-01",
+      "endDate": "2025-11-30",
+      "courses": [
+        "Thesis: Visual Image Restoration and Super-Resolution Using Deep Learning",
+        "Supervisors: Prof. Chau Lap-Pui (IEEE Fellow) and Assoc. Prof. Yap Kim-Hui"
+      ]
+    },
+    {
+      "institution": "Chongqing University",
+      "location": "China",
+      "area": "Computer Science",
+      "studyType": "M.Sc.",
+      "startDate": "2017-09-01",
+      "endDate": "2020-07-31",
+      "courses": ["Efficient computing systems, low-power video decoding, AI hardware acceleration"]
+    },
+    {
+      "institution": "Chongqing University",
+      "location": "China",
+      "area": "Internet of Things",
+      "studyType": "B.Sc.",
+      "startDate": "2013-09-01",
+      "endDate": "2017-07-31"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Vision Foundation Models",
+      "keywords": ["CLIP", "DINO", "SAM", "ImageBind", "SigLIP", "ViT", "C-RADIO", "LLaVA", "Qwen-VL"]
+    },
+    {
+      "name": "Computer Vision",
+      "keywords": ["Image/Video Restoration", "Super-Resolution", "Anomaly Detection", "Segmentation", "Object Detection", "Degradation Modeling"]
+    },
+    {
+      "name": "Deep Learning",
+      "keywords": ["PyTorch", "Transformers", "Diffusion Models", "Self-supervised Learning", "Few-shot Learning", "Knowledge Distillation"]
+    },
+    {
+      "name": "Tools & Engineering",
+      "keywords": ["Python", "CUDA", "Docker", "Linux", "Git", "HuggingFace", "OpenCV", "NumPy", "TensorFlow"]
+    }
+  ],
+  "languages": [
+    { "language": "Chinese", "fluency": "Native speaker" },
+    { "language": "English", "fluency": "Professional working proficiency" }
+  ]
+}

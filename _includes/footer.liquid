@@ -1,0 +1,8 @@
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; {{ 'now' | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}.
+    {%- if site.footer_text and site.footer_text != "" %}
+      {{ site.footer_text }}
+    {%- endif %}
+  </div>
+</footer>
