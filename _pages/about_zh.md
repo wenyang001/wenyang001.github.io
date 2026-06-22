@@ -85,15 +85,15 @@ latest_posts:
   </li>
   <li>
     <strong>PromptSR: Cascade Prompting for Lightweight Image Super-Resolution</strong>
-    <span class="zh-paper-meta">IEEE TMM 2026 · CCF B · 中科院 1 区</span>
+    <span class="zh-paper-meta">IEEE TMM 2026 · CCF A · 中科院 1区 TOP</span>
   </li>
   <li>
     <strong>ByteNet: Rethinking Multimedia File Fragment Classification through Visual Perspectives</strong>
-    <span class="zh-paper-meta">IEEE TMM 2024 · CCF B · 中科院 1 区</span>
+    <span class="zh-paper-meta">IEEE TMM 2024 · CCF A · 中科院 1区 TOP</span>
   </li>
   <li>
     <strong>SSH-Net: A Self-Supervised and Hybrid Network for Noisy Image Watermark Removal</strong>
-    <span class="zh-paper-meta">JVCIR 2025 · CCF C · 中科院 3 区</span>
+    <span class="zh-paper-meta">JVCIR 2025 · CCF C · 中科院 3区</span>
   </li>
   <li>
     <strong>Bitstream-Corrupted Video Recovery: A Novel Benchmark Dataset and Method</strong>
