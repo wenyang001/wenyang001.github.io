@@ -48,6 +48,57 @@
       ]
     }
   ],
+  "publications": [
+    {
+      "name": "Bitstream-Corrupted JPEG Images Are Restorable: Two-Stage Compensation and Alignment Framework for Image Restoration",
+      "publisher": "CVPR · CCF A",
+      "releaseDate": "2023",
+      "url": "https://wenyang001.github.io/publications/#liu2023bitstream_cvpr",
+      "summary": "First-author work on restoring JPEG images from corrupted bitstreams."
+    },
+    {
+      "name": "PromptSR: Cascade Prompting for Lightweight Image Super-Resolution",
+      "publisher": "IEEE TMM · CCF A · CAS Zone 1 TOP · JCR Q1",
+      "releaseDate": "2026",
+      "url": "https://wenyang001.github.io/publications/#liu2026promptsr",
+      "summary": "First-author work on prompt-guided lightweight image super-resolution."
+    },
+    {
+      "name": "ByteNet: Rethinking Multimedia File Fragment Classification through Visual Perspectives",
+      "publisher": "IEEE TMM · CCF A · CAS Zone 1 TOP · JCR Q1",
+      "releaseDate": "2024",
+      "url": "https://wenyang001.github.io/publications/#liu2024bytenet",
+      "summary": "First-author work on visual representations for multimedia file fragment classification."
+    },
+    {
+      "name": "Bitstream-Corrupted Video Recovery: A Novel Benchmark Dataset and Method",
+      "publisher": "NeurIPS · CCF A",
+      "releaseDate": "2023",
+      "url": "https://wenyang001.github.io/publications/#liu2023bitstream_neurips",
+      "summary": "A benchmark dataset and recovery method for bitstream-corrupted video."
+    },
+    {
+      "name": "SSH-Net: A Self-Supervised and Hybrid Network for Noisy Image Watermark Removal",
+      "publisher": "JVCIR · CCF C · CAS Zone 3 · JCR Q2",
+      "releaseDate": "2025",
+      "url": "https://wenyang001.github.io/publications/#liu2025ssh",
+      "summary": "First-author self-supervised watermark removal without paired training data."
+    },
+    {
+      "name": "HolyLight: A Nanophotonic Accelerator for Deep Learning in Data Centers",
+      "publisher": "DATE · CCF B · 140+ citations",
+      "releaseDate": "2019",
+      "url": "https://wenyang001.github.io/publications/#liu2019holylight",
+      "summary": "Co-first-author work on nanophotonic acceleration for efficient deep learning inference."
+    },
+    {
+      "name": "Fine-Grained Task-Level Parallel and Low Power H.264 Decoding in Multi-Core Systems",
+      "publisher": "ICPADS · CCF C",
+      "releaseDate": "2018",
+      "url": "https://wenyang001.github.io/publications/#liu2018fine",
+      "summary": "First-author work on parallel and low-power H.264 decoding in multi-core systems."
+    }
+  ],
   "education": [
     {
       "institution": "Nanyang Technological University",
