@@ -67,6 +67,15 @@
     margin: 0 0 1.5rem;
   }
 
+  .zh-news-list {
+    margin: 0 0 1.5rem;
+  }
+
+  .zh-paper-list {
+    margin: 0 0 1.5rem 1.1rem;
+    padding: 0;
+  }
+
   article h2,
   .section-label {
     clear: both;
@@ -87,6 +96,34 @@
   .education-item {
     margin: 0 0 1rem;
     line-height: 1.45;
+  }
+
+  .zh-news-item {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    margin: 0 0 1rem;
+    line-height: 1.45;
+  }
+
+  .zh-news-date {
+    color: var(--global-text-color);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .zh-news-text {
+    min-width: 0;
+  }
+
+  .zh-paper-list li {
+    margin: 0 0 0.65rem;
+    line-height: 1.45;
+  }
+
+  .zh-paper-meta {
+    color: var(--global-text-color-light);
+    font-size: 0.92em;
   }
 
   .education-item strong {
@@ -123,6 +160,15 @@
 
     .lang-toggle {
       margin: 0.35rem 0 0;
+    }
+
+    .zh-news-item {
+      display: block;
+    }
+
+    .zh-news-date {
+      display: block;
+      margin-bottom: 0.15rem;
     }
   }
 </style>

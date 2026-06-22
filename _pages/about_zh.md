@@ -58,3 +58,47 @@ latest_posts:
     重庆大学，中国
   </p>
 </div>
+
+<div class="section-label">动态</div>
+
+<div class="zh-news-list">
+  <p class="zh-news-item">
+    <span class="zh-news-date">2025 年 11 月 30 日</span>
+    <span class="zh-news-text">获得南洋理工大学 <strong>Electrical and Electronic Engineering 博士学位</strong>。</span>
+  </p>
+  <p class="zh-news-item">
+    <span class="zh-news-date">2025 年 11 月 1 日</span>
+    <span class="zh-news-text">加入 <strong>Hyundai–NTU–A\*STAR Corporate Lab</strong>，由 Assoc. Prof. Wai Kin (Adams) Kong 指导，在 HMGICS 从事面向智能制造的视觉机器人感知研究。</span>
+  </p>
+  <p class="zh-news-item">
+    <span class="zh-news-date">2025 年 1 月 1 日</span>
+    <span class="zh-news-text">论文 <em>PromptSR</em> 被 <strong>IEEE Transactions on Multimedia</strong> 接收，研究级联提示机制在轻量化图像超分辨率中的应用。</span>
+  </p>
+</div>
+
+<div class="section-label">代表论文</div>
+
+<ul class="zh-paper-list">
+  <li>
+    <strong>Bitstream-Corrupted JPEG Images Are Restorable</strong>
+    <span class="zh-paper-meta">CVPR 2023 · CCF A</span>
+  </li>
+  <li>
+    <strong>PromptSR: Cascade Prompting for Lightweight Image Super-Resolution</strong>
+    <span class="zh-paper-meta">IEEE TMM 2026 · CCF B · 中科院 1 区</span>
+  </li>
+  <li>
+    <strong>ByteNet: Rethinking Multimedia File Fragment Classification through Visual Perspectives</strong>
+    <span class="zh-paper-meta">IEEE TMM 2024 · CCF B · 中科院 1 区</span>
+  </li>
+  <li>
+    <strong>SSH-Net: A Self-Supervised and Hybrid Network for Noisy Image Watermark Removal</strong>
+    <span class="zh-paper-meta">JVCIR 2025 · CCF C · 中科院 3 区</span>
+  </li>
+  <li>
+    <strong>Bitstream-Corrupted Video Recovery: A Novel Benchmark Dataset and Method</strong>
+    <span class="zh-paper-meta">NeurIPS 2023 · CCF A</span>
+  </li>
+</ul>
+
+<p>完整论文列表见 <a href="/publications/">Publications</a>。</p>
