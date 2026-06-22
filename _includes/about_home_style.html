@@ -1,0 +1,128 @@
+<style>
+  article .profile,
+  article .profile div,
+  article .profile figure {
+    width: 240px !important;
+    max-width: 240px !important;
+    background: transparent !important;
+  }
+
+  article .profile img,
+  article .profile picture img,
+  article .profile img.img-fluid,
+  article .profile img.z-depth-1 {
+    width: 240px !important;
+    max-width: 240px !important;
+    height: auto !important;
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background: transparent !important;
+  }
+
+  article .profile p {
+    margin: 0.8rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    color: var(--global-text-color-light);
+  }
+
+  article .profile .profile-note span {
+    color: var(--global-text-color);
+    font-weight: 500;
+  }
+
+  article .profile .more-info,
+  article .profile .more-info p,
+  article .profile .more-info a {
+    font-family: inherit !important;
+  }
+
+  article .profile a {
+    color: inherit !important;
+    overflow-wrap: anywhere;
+  }
+
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.65rem;
+    padding: 0.12rem 0.52rem;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 999px;
+    color: var(--global-text-color) !important;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    text-decoration: none !important;
+    vertical-align: middle;
+  }
+
+  .lang-toggle:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color) !important;
+  }
+
+  .education-list {
+    margin: 0 0 1.5rem;
+  }
+
+  article h2,
+  .section-label {
+    clear: both;
+    margin: 1.8rem 0 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    font-family: inherit !important;
+    font-size: 1.85rem !important;
+    font-weight: 300 !important;
+    line-height: 1.2;
+    color: var(--global-text-color) !important;
+  }
+
+  article h2 a {
+    color: inherit !important;
+  }
+
+  .education-item {
+    margin: 0 0 1rem;
+    line-height: 1.45;
+  }
+
+  .education-item strong {
+    font-weight: 500;
+  }
+
+  .education-year {
+    color: var(--global-text-color-light);
+    font-size: 0.92em;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 575px) {
+    article .profile {
+      float: none !important;
+      margin: 0 auto 1.25rem !important;
+    }
+
+    article .profile,
+    article .profile div,
+    article .profile figure,
+    article .profile img,
+    article .profile picture img,
+    article .profile img.img-fluid,
+    article .profile img.z-depth-1 {
+      width: min(220px, 100%) !important;
+      max-width: min(220px, 100%) !important;
+    }
+
+    article .profile p {
+      text-align: center;
+    }
+
+    .lang-toggle {
+      margin: 0.35rem 0 0;
+    }
+  }
+</style>
