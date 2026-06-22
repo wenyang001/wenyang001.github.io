@@ -1,10 +1,16 @@
-{% if entry.ccf or entry.cas %}
+{% if entry.ccf or entry.cas or entry.jcr or entry.citations %}
   <div class="rankings">
     {% if entry.ccf %}
       <span class="ranking-badge ranking-ccf">CCF {{ entry.ccf }}</span>
     {% endif %}
     {% if entry.cas %}
       <span class="ranking-badge ranking-cas">中科院 {{ entry.cas }}</span>
+    {% endif %}
+    {% if entry.jcr %}
+      <span class="ranking-badge ranking-jcr">JCR {{ entry.jcr }}</span>
+    {% endif %}
+    {% if entry.citations %}
+      <span class="ranking-badge ranking-citations">{{ entry.citations }} citations</span>
     {% endif %}
   </div>
 {% endif %}

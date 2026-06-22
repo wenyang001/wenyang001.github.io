@@ -10,7 +10,7 @@ contact_note:
 description: >
   Wenyang Liu is a Research Fellow at the Hyundai–NTU–A*STAR Corporate Lab, Nanyang Technological University, working on computer vision, robotic perception, multimodal AI, and reliable visual learning for smart manufacturing.
 footer_text: ""
-keywords: computer vision, image restoration, super-resolution, deep learning, NTU, Singapore
+keywords: computer vision, robotic perception, 6D pose estimation, industrial AI, image restoration, super-resolution, anomaly detection, deep learning, NTU, Singapore
 lang: en
 icon: 🔬
 
@@ -361,6 +361,9 @@ filtered_bibtex_keywords:
     award_name,
     bibtex_show,
     blog,
+    cas,
+    ccf,
+    citations,
     code,
     dimensions,
     eprint,
@@ -368,6 +371,7 @@ filtered_bibtex_keywords:
     hal,
     html,
     inspirehep_id,
+    jcr,
     pdf,
     pmid,
     poster,

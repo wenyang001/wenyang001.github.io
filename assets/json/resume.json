@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Wenyang Liu",
-    "label": "Computer Vision Researcher",
+    "label": "Computer Vision & Robotic Perception Researcher",
     "image": "",
     "email": "wenyang001@e.ntu.edu.sg",
     "url": "https://wenyang001.github.io",
-    "summary": "Computer Vision researcher focused on image/video restoration, super-resolution, degradation modeling, and efficient vision models. 18 publications, 300+ citations, h-index 8.",
+    "summary": "Computer vision and robotic perception researcher building reliable visual AI for smart manufacturing and real-world imaging systems. 20 publications, 300+ citations, and h-index 8.",
     "location": {
       "city": "Singapore",
       "countryCode": "SG"
@@ -27,10 +27,11 @@
       "position": "Research Fellow",
       "location": "Singapore",
       "startDate": "2025-11-01",
-      "summary": "Research on robust visual perception for smart manufacturing: open-world object detection, segmentation, and foundation model adaptation for industrial scenes.",
+      "summary": "Develop vision-based robotic perception systems for reliable industrial part picking in smart manufacturing.",
       "highlights": [
         "Develop open-world object detection and segmentation methods combining language prompts and visual references",
-        "Industrial anomaly detection and few-shot adaptation for factory AI systems"
+        "Build 6D pose estimation and grasp pose generation pipelines for cluttered industrial scenes",
+        "Adapt visual foundation models to previously unseen parts and real-world factory constraints"
       ]
     },
     {

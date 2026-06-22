@@ -2,20 +2,20 @@
 layout: page
 title: Projects
 permalink: /projects/
-description:
+description: Applied research projects in robotic perception, industrial vision, multimodal interaction, and reliable visual AI.
 nav: true
 nav_order: 3
 ---
 
 **Hyundai–NTU–A\*STAR Corporate Lab** · *Nov 2025 – Present*
 
-Vision stack for reliable robotic part picking at HMGICS — 6D pose estimation, grasp pose generation, open-world object detection and segmentation.
+Building the perception stack for reliable robotic part picking at HMGICS: open-world object detection and segmentation, 6D pose estimation, and grasp pose generation for cluttered industrial scenes.
 
 ---
 
 **Schaeffler–NTU Corporate Lab, Phase III: Multimodal Human-Robot Interaction** · *Jun 2025 – Nov 2025*
 
-Research on state-of-the-art multi-modal pose estimation and human motion retargeting algorithms for human-robot collaborative tasks in industrial environments.
+Benchmarked multimodal 3D human pose estimation and developed motion-retargeting methods for human–robot collaborative tasks in industrial environments.
 
 ---
 

@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Multimodal Human-Robot Interaction & Analytics (Schaeffler Phase III)
-description: SOTA multi-modal pose estimation and human retargeting for human-robot interaction. Schaeffler–NTU Corporate Lab · Jun 2025 – Nov 2025
+description: Multimodal pose estimation and human motion retargeting for industrial human–robot collaboration. Schaeffler–NTU Corporate Lab · Jun 2025 – Nov 2025
 importance: 4
 category: work
 ---
 
 **Funding:** Schaeffler–NTU Corporate Lab · Jun 2025 – Nov 2025
 
-Conducted comprehensive research on state-of-the-art multi-modal pose estimation and human retargeting algorithms for human-robot interaction in industrial settings.
+Benchmarked multimodal 3D human pose estimation and developed motion-retargeting methods for industrial human–robot collaboration.
 
 **Contributions:**
 
-- Surveyed and benchmarked SOTA multi-modal 3D human pose estimation methods across RGB, depth, and IMU sensor modalities.
+- Surveyed and benchmarked multimodal 3D human pose estimation methods across RGB, depth, and IMU sensor modalities.
 - Developed human motion retargeting algorithms to transfer captured human motions to robot kinematic models for collaborative task execution.
 - Evaluated real-time performance and robustness requirements for deployment in on-site manufacturing environments.

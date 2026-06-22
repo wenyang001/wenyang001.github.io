@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Selected publications in computer vision, image restoration, and multimodal AI.
+description: Publications in computer vision, robotic perception, image restoration, and multimodal AI.
 nav: true
 nav_order: 2
 ---
@@ -39,6 +39,18 @@ nav_order: 2
     border: 1px solid rgba(0, 0, 0, 0.15);
     color: var(--global-text-color);
     background: rgba(0, 0, 0, 0.035);
+  }
+
+  .publications .ranking-jcr {
+    border: 1px solid rgba(35, 92, 145, 0.22);
+    color: #235c91;
+    background: rgba(35, 92, 145, 0.07);
+  }
+
+  .publications .ranking-citations {
+    border: 1px solid rgba(167, 112, 0, 0.26);
+    color: #8a5d00;
+    background: rgba(245, 184, 53, 0.1);
   }
 </style>
 
