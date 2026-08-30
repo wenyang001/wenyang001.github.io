@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: content_only
 permalink: /publications/
 title: Publications
-description: Publications in computer vision, robotic perception, image restoration, and multimodal AI.
 nav: true
 nav_order: 2
 ---

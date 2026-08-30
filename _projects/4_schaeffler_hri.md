@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Multimodal Human-Robot Interaction & Analytics (Schaeffler Phase III)
+title: Multimodal Human–Robot Interaction (Schaeffler Phase III)
 description: Multimodal pose estimation and human motion retargeting for industrial human–robot collaboration. Schaeffler–NTU Corporate Lab · Jun 2025 – Nov 2025
 importance: 4
 category: work

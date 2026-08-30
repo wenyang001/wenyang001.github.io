@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<style>
+  .content-only-page > article > .publications {
+    margin-top: 0 !important;
+  }
+
+  .content-only-page > article > .publications > h2.bibliography:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+</style>
+
+<div class="post content-only-page">
+  <article>
+    {{ content }}
+  </article>
+</div>

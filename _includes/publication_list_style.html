@@ -1,4 +1,8 @@
 <style>
+  .post-header .post-description:empty {
+    display: none;
+  }
+
   .publications {
     margin-top: 0.5rem !important;
   }
@@ -99,9 +103,11 @@
 
     .publications ol.bibliography li .abbr {
       margin: 0;
+      justify-self: start;
     }
 
     .publications ol.bibliography li .abbr abbr {
+      display: inline-block !important;
       width: auto !important;
       min-width: 5rem;
     }

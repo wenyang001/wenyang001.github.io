@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Corrupted Flash Memory Media Recovery
-description: Learning-based frameworks to restore images and video from damaged flash storage. NRF Singapore · Jan 2021 – Mar 2024
+title: Image & Video Restoration from Damaged Storage
+description: Learning-based frameworks to restore images and video from damaged flash storage. National Research Foundation, Singapore (NRF) · Jan 2021 – Mar 2024
 importance: 1
 category: work
 ---
 
-**Funding:** Singapore National Research Foundation (NRF) · Jan 2021 – Mar 2024
+**Funding:** National Research Foundation, Singapore (NRF) · Jan 2021 – Mar 2024
 
 Flash storage corruption leaves JPEG images and video streams in states that standard decoders cannot handle. This project designed learning-based frameworks to restore corrupted images and videos from damaged flash memory, enabling more reliable data recovery.
 

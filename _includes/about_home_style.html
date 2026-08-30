@@ -1,4 +1,17 @@
 <style>
+  .home-scroll-brand {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 120ms ease;
+  }
+
+  .home-scroll-brand.is-visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .post {
     max-width: 930px;
     margin-right: auto;
@@ -23,18 +36,34 @@
   }
 
   .post-header .header-contact {
-    margin: 0.32rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.32rem 0.82rem;
+    align-items: center;
+    margin: 0.4rem 0 0;
     color: var(--global-text-color-light);
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     line-height: 1.45;
   }
 
-  .post-header .header-contact a {
+  .post-header .header-contact .contact-item {
+    display: inline-flex;
+    gap: 0.3rem;
+    align-items: center;
     color: inherit;
+    white-space: nowrap;
   }
 
-  .post-header .header-contact a:hover {
+  .post-header .header-contact .contact-item i {
+    width: 0.9rem;
     color: var(--global-theme-color);
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .post-header .header-contact a.contact-item:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
   }
 
   article {
@@ -267,8 +296,8 @@
     display: flex;
     flex-direction: column;
     min-width: 0;
-    min-height: 140px;
-    padding: 0.65rem;
+    min-height: 142px;
+    padding: 0.68rem 0.7rem 0.65rem;
     border: 1px solid var(--global-divider-color);
     border-radius: 6px;
     background: var(--global-bg-color);
@@ -303,22 +332,33 @@
     margin: 0 0 0.28rem;
     font-size: 0.77rem;
     font-weight: 600;
-    line-height: 1.32;
+    line-height: 1.34;
   }
 
   .project-item p {
     margin: 0;
     color: var(--global-text-color-light);
     font-size: 0.67rem;
-    line-height: 1.35;
+    line-height: 1.36;
   }
 
-  .project-item .project-output {
+  .project-outputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
     margin-top: auto;
-    padding-top: 0.45rem;
+    padding-top: 0.5rem;
+  }
+
+  .project-outputs span {
+    display: inline-block;
+    padding: 0.1rem 0.28rem;
+    border-radius: 3px;
+    background: rgba(181, 9, 172, 0.07);
     color: var(--global-theme-color);
-    font-size: 0.64rem;
-    font-weight: 500;
+    font-size: 0.59rem;
+    font-weight: 550;
+    line-height: 1.35;
   }
 
   @media (max-width: 767px) {
@@ -382,11 +422,48 @@
     .project-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .project-item:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 540px) {
     .project-grid {
       grid-template-columns: minmax(0, 1fr);
     }
+
+    .project-item {
+      min-height: 0;
+    }
+
+    .project-outputs {
+      margin-top: 0.5rem;
+      padding-top: 0;
+    }
+
+    .project-item:last-child:nth-child(odd) {
+      grid-column: span 1;
+    }
   }
 </style>
+
+<script>
+  (() => {
+    const brand = document.querySelector(".home-scroll-brand");
+    const heading = document.querySelector(".post-header .post-title");
+
+    if (!brand || !heading) return;
+
+    const setVisible = (visible) => {
+      brand.classList.toggle("is-visible", visible);
+      brand.setAttribute("aria-hidden", String(!visible));
+    };
+
+    const observer = new IntersectionObserver(([entry]) => setVisible(!entry.isIntersecting), {
+      rootMargin: "-57px 0px 0px",
+    });
+
+    observer.observe(heading);
+  })();
+</script>

@@ -1,11 +1,9 @@
 {
   "basics": {
     "name": "Wenyang Liu",
-    "label": "Computer Vision, Multimodal AI & Content Understanding Researcher",
     "image": "",
     "email": "wenyang001@e.ntu.edu.sg",
     "url": "https://wenyang001.github.io",
-    "summary": "Ph.D. researcher in computer vision and multimodal AI, building foundation-model-based systems for visual content understanding and real-world applications. First author of four CCF-A papers across CVPR, ACM MM, and IEEE TMM, with 21 publications, 340+ citations, and an h-index of 8. Experience spans few-/zero-shot learning, open-vocabulary perception, image and video restoration, and robotics.",
     "phone": "+65 8387 8619",
     "location": {
       "city": "Singapore",
@@ -34,7 +32,7 @@
       "startDate": "2025-11-01",
       "summary": "Develop vision-based robotic perception systems for reliable industrial part picking in smart manufacturing.",
       "highlights": [
-        "Developed DriftAD, a visually-guided CLIP adaptation framework for few-shot anomaly detection, achieving up to 1.5-point gains in 1-shot AUROC and PRO (ACM MM 2026); extended the work to zero-shot detection with TRACE using CLIP and DINOv3",
+        "Developed DriftAD, a visually-guided CLIP adaptation framework for few-shot anomaly detection, achieving up to 1.5-point gains in 1-shot AUROC and PRO (ACM MM 2026); extended the work to zero-shot anomaly detection with TRACE using CLIP and DINOv3 (submitted to AAAI 2027)",
         "Built an open-vocabulary perception and grasping pipeline for unseen object categories, validated on industrial parts and demonstrated through on-site robotic grasping; filed a related patent"
       ]
     },
@@ -44,7 +42,7 @@
       "location": "Singapore",
       "startDate": "2021-01-01",
       "endDate": "2025-10-31",
-      "summary": "Led research on image/video restoration, lightweight super-resolution, and corrupted multimedia recovery.",
+      "summary": "Conducted research on image/video restoration, lightweight super-resolution, and corrupted multimedia recovery.",
       "highlights": [
         "Developed a two-stage framework for bitstream-corrupted JPEG restoration reaching 38.92 dB PSNR on 2K images (+5.52 dB over EPDN); published as first author at CVPR 2023, extended through a collaborative NeurIPS 2023 study on corrupted-video recovery",
         "Designed PromptSR, a 0.78M-parameter lightweight super-resolution model using cascade prompting, improving baselines by up to 0.48 dB (IEEE TMM 2026); extended to adaptive superpixel token aggregation in AsTaSR",
@@ -60,7 +58,7 @@
       "summary": "Researched energy-efficient video processing and machine learning acceleration.",
       "highlights": [
         "Parallelized H.264 decoding at the task level with dynamic voltage and frequency scaling, improving decoding speed by 27-32% while reducing energy consumption by 23-25% across 720p-2160p video (ICPADS 2018)",
-        "Developed HolyLight, a nanophotonic accelerator for data-center CNN workloads achieving 13x higher throughput per watt than a ReRAM baseline, now cited 140+ times (DATE 2019)"
+        "Developed HolyLight, a nanophotonic accelerator for data-center CNN workloads achieving 13× higher throughput per watt than a ReRAM baseline, now cited 140+ times (DATE 2019)"
       ]
     }
   ],
@@ -97,11 +95,6 @@
   ],
   "awards": [
     {
-      "title": "Grasp Pose Estimation for Wrapped Parts in Unstructured Industrial Environments",
-      "awarder": "Patent application, 2026",
-      "summary": "Invented a grasp-pose estimation method for industrial parts under occlusion, packaging interference, and unstructured conditions."
-    },
-    {
       "title": "Chunhui Cup Innovation and Entrepreneurship Competition",
       "awarder": "Winner, 2023"
     }
@@ -132,10 +125,34 @@
       "summary": "First author. Multimodal byte-visual fusion improving file-fragment classification accuracy by up to 12.2%."
     },
     {
+      "title": "SSH-Net: A Self-Supervised and Hybrid Network for Noisy Image Watermark Removal",
+      "releaseDate": "2025",
+      "publisher": "Journal of Visual Communication and Image Representation (JVCIR, CCF-C, CAS Q3, JCR Q2)",
+      "summary": "First author. Self-supervised noisy watermark removal without paired clean targets."
+    },
+    {
+      "title": "A Byte Sequence Is Worth an Image: CNN for File Fragment Classification Using Bit Shift and n-Gram Embeddings",
+      "releaseDate": "2023",
+      "publisher": "IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)",
+      "summary": "First author. Encoded bit-level byte patterns as images for file-fragment classification."
+    },
+    {
       "title": "HolyLight: A Nanophotonic Accelerator for Deep Learning in Data Centers",
       "releaseDate": "2019",
       "publisher": "Design, Automation & Test in Europe Conference (DATE, CCF-B)",
-      "summary": "Co-author. Nanophotonic accelerator for efficient data-center inference; cited 140+ times."
+      "summary": "First student author (second author; supervisor listed first). A nanophotonic accelerator achieving 13× higher throughput per watt than a ReRAM baseline; 140+ citations."
+    },
+    {
+      "title": "Fine-Grained Task-Level Parallel and Low-Power H.264 Decoding in Multi-Core Systems",
+      "releaseDate": "2018",
+      "publisher": "IEEE International Conference on Parallel and Distributed Systems (ICPADS, CCF-C)",
+      "summary": "First author. Parallel H.264 decoding with DVFS, improving speed by 27–32% while reducing energy consumption by 23–25%."
+    },
+    {
+      "title": "MindReading: An Ultra-Low-Power Photonic Accelerator for EEG-Based Human Intention Recognition",
+      "releaseDate": "2020",
+      "publisher": "Asia and South Pacific Design Automation Conference (ASP-DAC, CCF-C)",
+      "summary": "Co-first author. Photonic acceleration for EEG-based intention recognition with 62.7% lower power consumption."
     }
   ],
   "skills": [
@@ -145,7 +162,14 @@
     },
     {
       "name": "Vision & Content Understanding",
-      "keywords": ["Object detection", "Instance segmentation", "Object tracking", "Anomaly detection", "Open-vocabulary perception", "Image/video understanding"]
+      "keywords": [
+        "Object detection",
+        "Instance segmentation",
+        "Object tracking",
+        "Anomaly detection",
+        "Open-vocabulary perception",
+        "Image/video understanding"
+      ]
     },
     {
       "name": "Learning Methods",

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Visual Sensing, Detection & Analytics (Schaeffler Phase II)
+title: Open-Vocabulary Industrial Vision (Schaeffler Phase II)
 description: Deep learning for object detection and human–object interaction in industrial environments. Schaeffler–NTU Corporate Lab · Mar 2024 – Dec 2024
 importance: 2
 category: work

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bitstream-Based Digital Watermarking
-description: Robust encoder–decoder framework for digital watermarking under compression and noise. DSO National Laboratories · Dec 2024 – Jun 2025
+title: Image Watermarking & Multimedia Security
+description: Robust image watermarking and self-supervised watermark removal under compression and noise. DSO National Laboratories · Dec 2024 – Jun 2025
 importance: 3
 category: work
 ---
