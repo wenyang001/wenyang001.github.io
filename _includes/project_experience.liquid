@@ -1,0 +1,10 @@
+<div class="project-grid" role="list" aria-label="{{ page.project_experience_label | default: 'Project experience' }}">
+  {% for project in include.projects %}
+    <div class="project-item{% if project.current %} is-current{% endif %}" role="listitem">
+      <time>{{ project.period }}</time>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.organization }}</p>
+      {% if project.output %}<p class="project-output">{{ project.output }}</p>{% endif %}
+    </div>
+  {% endfor %}
+</div>
