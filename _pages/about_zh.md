@@ -27,27 +27,31 @@ research_tags:
 
 project_experience_label: 科研项目
 project_experience:
-  - period: 2021年1月 – 2024年3月
-    title: 受损存储中的图像与视频恢复
-    organization: 新加坡国家研究基金会（NRF）
-    output: CVPR · NeurIPS · IEEE TMM
-  - period: 2024年3月 – 2024年12月
-    title: 开放词汇工业视觉
-    organization: Schaeffler–NTU Corporate Lab · Phase II
-    output: EMNLP · ACM MM · KBS
-  - period: 2024年12月 – 2025年6月
-    title: 图像水印与多媒体安全
-    organization: DSO National Laboratories, Singapore
-    output: JVCIR 2025
-  - period: 2025年6月 – 2025年11月
-    title: 多模态人机交互
-    organization: Schaeffler–NTU Corporate Lab · Phase III
-    output: 3D 人体姿态重定向
   - period: 2025年11月 – 至今
     title: 面向工业视觉感知的基础模型
     organization: Hyundai–NTU–A*STAR Corporate Lab
     output: ACM MM 2026 · 已申请专利
     current: true
+  - period: 2025年6月 – 2025年11月
+    title: 多模态人机交互
+    organization: Schaeffler–NTU Corporate Lab · Phase III
+    output: 3D 人体姿态重定向
+  - period: 2024年12月 – 2025年6月
+    title: 图像水印与多媒体安全
+    organization: DSO National Laboratories, Singapore
+    output: JVCIR 2025
+  - period: 2024年3月 – 2024年12月
+    title: 开放词汇工业视觉
+    organization: Schaeffler–NTU Corporate Lab · Phase II
+    output: EMNLP · ACM MM · KBS
+  - period: 2021年1月 – 2024年3月
+    title: 受损存储中的图像与视频恢复
+    organization: 新加坡国家研究基金会（NRF）
+    output: CVPR · NeurIPS · IEEE TMM
+  - period: 2017年9月 – 2020年7月
+    title: 高效视频处理与 AI 加速
+    organization: 重庆大学
+    output: ICPADS · DATE
 
 profile:
   align: right

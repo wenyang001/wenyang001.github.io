@@ -27,27 +27,31 @@ research_tags:
 
 project_experience_label: research projects
 project_experience:
-  - period: Jan 2021 – Mar 2024
-    title: Image & Video Restoration from Damaged Storage
-    organization: National Research Foundation, Singapore (NRF)
-    output: CVPR · NeurIPS · IEEE TMM
-  - period: Mar 2024 – Dec 2024
-    title: Open-Vocabulary Industrial Vision
-    organization: Schaeffler–NTU Corporate Lab · Phase II
-    output: EMNLP · ACM MM · KBS
-  - period: Dec 2024 – Jun 2025
-    title: Image Watermarking & Multimedia Security
-    organization: DSO National Laboratories, Singapore
-    output: JVCIR 2025
-  - period: Jun 2025 – Nov 2025
-    title: Multimodal Human–Robot Interaction
-    organization: Schaeffler–NTU Corporate Lab · Phase III
-    output: 3D Human Pose Retargeting
   - period: Nov 2025 – Present
     title: Foundation Models for Industrial Perception
     organization: Hyundai–NTU–A*STAR Corporate Lab
     output: ACM MM 2026 · Patent filed
     current: true
+  - period: Jun 2025 – Nov 2025
+    title: Multimodal Human–Robot Interaction
+    organization: Schaeffler–NTU Corporate Lab · Phase III
+    output: 3D Human Pose Retargeting
+  - period: Dec 2024 – Jun 2025
+    title: Image Watermarking & Multimedia Security
+    organization: DSO National Laboratories, Singapore
+    output: JVCIR 2025
+  - period: Mar 2024 – Dec 2024
+    title: Open-Vocabulary Industrial Vision
+    organization: Schaeffler–NTU Corporate Lab · Phase II
+    output: EMNLP · ACM MM · KBS
+  - period: Jan 2021 – Mar 2024
+    title: Image & Video Restoration from Damaged Storage
+    organization: National Research Foundation, Singapore (NRF)
+    output: CVPR · NeurIPS · IEEE TMM
+  - period: Sep 2017 – Jul 2020
+    title: Energy-Efficient Video Processing & AI Acceleration
+    organization: Chongqing University
+    output: ICPADS · DATE
 
 profile:
   align: right

@@ -33,3 +33,9 @@ Developed deep learning solutions for object detection and human–object intera
 **National Research Foundation, Singapore (NRF) — Image & Video Restoration from Damaged Storage** · _Jan 2021 – Mar 2024_
 
 Designed learning-based frameworks to restore corrupted images and videos from damaged flash memory. Work covers JPEG bitstream restoration, bitstream-corrupted video recovery, and multimedia file forensics. [[CVPR 2023, NeurIPS 2023, IEEE TMM 2024, DCC 2023]](/publications/)
+
+---
+
+**Chongqing University — Energy-Efficient Video Processing & AI Acceleration** · _Sep 2017 – Jul 2020_
+
+Researched energy-efficient video processing and machine learning acceleration. Developed task-level parallel H.264 decoding with dynamic voltage and frequency scaling, and contributed to HolyLight, a nanophotonic accelerator for data-center CNN workloads. [[ICPADS 2018, DATE 2019]](/publications/)
