@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Image Watermarking & Multimedia Security
+title: Robust Image Watermarking
 description: Robust image watermarking and self-supervised watermark removal under compression and noise. DSO National Laboratories · Dec 2024 – Jun 2025
 importance: 3
 category: work

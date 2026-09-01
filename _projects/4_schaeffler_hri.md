@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Multimodal Human–Robot Interaction (Schaeffler Phase III)
+title: Multimodal Human–Robot Collaboration (Schaeffler Phase III)
 description: Multimodal pose estimation and human motion retargeting for industrial human–robot collaboration. Schaeffler–NTU Corporate Lab · Jun 2025 – Nov 2025
 importance: 4
 category: work
@@ -12,6 +12,6 @@ Benchmarked multimodal 3D human pose estimation and developed motion-retargeting
 
 **Contributions:**
 
-- Surveyed and benchmarked multimodal 3D human pose estimation methods across RGB, depth, and IMU sensor modalities.
+- Surveyed and benchmarked multimodal 3D human pose estimation methods across RGB and depth modalities.
 - Developed human motion retargeting algorithms to transfer captured human motions to robot kinematic models for collaborative task execution.
 - Evaluated real-time performance and robustness requirements for deployment in on-site manufacturing environments.

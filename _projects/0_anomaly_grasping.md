@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Foundation Models for Industrial Perception
+title: Industrial Robotic Perception
 description: Few-/zero-shot anomaly detection and open-vocabulary grasp pose estimation for industrial robotic manipulation. Hyundai–NTU–A*STAR Corporate Lab · Nov 2025 – Present
 importance: 0
 category: work

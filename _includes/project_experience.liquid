@@ -4,9 +4,12 @@
       <time>{{ project.period }}</time>
       <h3>{{ project.title }}</h3>
       <p>{{ project.organization }}</p>
+      {% if project.summary %}
+        <p class="project-summary">{{ project.summary }}</p>
+      {% endif %}
       {% if project.output %}
         {% assign outputs = project.output | split: ' · ' %}
-        <div class="project-outputs">
+        <div class="project-outputs" aria-label="Selected outputs">
           {% for output in outputs -%}
             <span>{{ output }}</span>
           {%- endfor %}

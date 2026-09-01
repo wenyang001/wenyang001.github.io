@@ -28,29 +28,34 @@ research_tags:
 project_experience_label: research projects
 project_experience:
   - period: Nov 2025 – Present
-    title: Foundation Models for Industrial Perception
+    title: Industrial Robotic Perception
     organization: Hyundai–NTU–A*STAR Corporate Lab
-    output: ACM MM 2026 · Patent filed
+    summary: Developed open-world detection, segmentation, 6D pose estimation, and grasp generation for unseen industrial parts, with few-/zero-shot anomaly detection.
+    output: ACM MM
     current: true
   - period: Jun 2025 – Nov 2025
-    title: Multimodal Human–Robot Interaction
+    title: Multimodal Human–Robot Collaboration
     organization: Schaeffler–NTU Corporate Lab · Phase III
-    output: 3D Human Pose Retargeting
+    summary: Explored RGB- and depth-based 3D human pose estimation, benchmarked models, and developed motion retargeting for human–robot collaboration.
   - period: Dec 2024 – Jun 2025
-    title: Image Watermarking & Multimedia Security
-    organization: DSO National Laboratories, Singapore
-    output: JVCIR 2025
+    title: Robust Image Watermarking
+    organization: DSO National Laboratories
+    summary: Developed robust image watermarking and self-supervised watermark removal, evaluating resilience to JPEG compression, noise, resizing, and real-world distortions.
+    output: JVCIR
   - period: Mar 2024 – Dec 2024
     title: Open-Vocabulary Industrial Vision
     organization: Schaeffler–NTU Corporate Lab · Phase II
+    summary: Developed open-vocabulary detection and segmentation methods and studied human–object interaction recognition under limited supervision.
     output: EMNLP · ACM MM · KBS
   - period: Jan 2021 – Mar 2024
-    title: Image & Video Restoration from Damaged Storage
-    organization: National Research Foundation, Singapore (NRF)
+    title: Image and Video Restoration
+    organization: National Research Foundation
+    summary: Developed learning-based methods to restore damaged images and videos from flash storage, supporting reliable visual data recovery.
     output: CVPR · NeurIPS · IEEE TMM
   - period: Sep 2017 – Jul 2020
-    title: Energy-Efficient Video Processing & AI Acceleration
+    title: Video Decoding & AI Acceleration
     organization: Chongqing University
+    summary: Developed task-parallel H.264 decoding with dynamic voltage scaling and contributed to photonic acceleration for energy-efficient CNN workloads.
     output: ICPADS · DATE
 
 profile:

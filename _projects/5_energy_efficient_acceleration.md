@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Energy-Efficient Video Processing & AI Acceleration
+title: Video Decoding & AI Acceleration
 description: Energy-efficient video processing and machine learning acceleration. Chongqing University · Sep 2017 – Jul 2020
 importance: 5
 category: work

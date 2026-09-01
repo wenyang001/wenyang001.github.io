@@ -28,29 +28,34 @@ research_tags:
 project_experience_label: 科研项目
 project_experience:
   - period: 2025年11月 – 至今
-    title: 面向工业视觉感知的基础模型
+    title: 工业机器人视觉感知
     organization: Hyundai–NTU–A*STAR Corporate Lab
-    output: ACM MM 2026 · 已申请专利
+    summary: 构建面向未见工业零件的开放世界检测、分割、6D 位姿估计与抓取生成流程，并开展少样本/零样本异常检测。
+    output: ACM MM
     current: true
   - period: 2025年6月 – 2025年11月
-    title: 多模态人机交互
+    title: 多模态人机协作
     organization: Schaeffler–NTU Corporate Lab · Phase III
-    output: 3D 人体姿态重定向
+    summary: 探索基于 RGB 与深度信息的 3D 人体姿态估计，开展模型评测并开发面向人机协作的动作重定向方法。
   - period: 2024年12月 – 2025年6月
-    title: 图像水印与多媒体安全
-    organization: DSO National Laboratories, Singapore
-    output: JVCIR 2025
+    title: 鲁棒图像水印
+    organization: DSO National Laboratories
+    summary: 开发鲁棒图像水印与自监督水印去除方法，评估其在 JPEG 压缩、噪声、缩放等真实失真下的稳定性。
+    output: JVCIR
   - period: 2024年3月 – 2024年12月
     title: 开放词汇工业视觉
     organization: Schaeffler–NTU Corporate Lab · Phase II
+    summary: 开发开放词汇检测与分割方法，并研究有限监督条件下的人-物交互识别。
     output: EMNLP · ACM MM · KBS
   - period: 2021年1月 – 2024年3月
-    title: 受损存储中的图像与视频恢复
-    organization: 新加坡国家研究基金会（NRF）
+    title: 图像与视频恢复
+    organization: 国家研究基金会
+    summary: 开发基于学习的损坏图像与视频恢复方法，支持从闪存中可靠地恢复视觉数据。
     output: CVPR · NeurIPS · IEEE TMM
   - period: 2017年9月 – 2020年7月
-    title: 高效视频处理与 AI 加速
+    title: 视频解码与 AI 加速
     organization: 重庆大学
+    summary: 开发带动态电压调节的任务级 H.264 并行解码方法，并参与高能效 CNN 光子加速研究。
     output: ICPADS · DATE
 
 profile:
