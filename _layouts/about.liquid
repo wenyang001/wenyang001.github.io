@@ -71,8 +71,8 @@ layout: default
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">{{ page.selected_papers_label | default: 'selected publications' }}</a>
       </h2>
-      <div class="publications">
-        {% bibliography --group_by none --query @*[homepage=true]* %}
+      <div class="publications about-selected-publications">
+        {% bibliography --group_by none --query @*[homepage=true]* --template about_bib %}
       </div>
     {% endif %}
 

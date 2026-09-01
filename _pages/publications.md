@@ -15,3 +15,15 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+<script>
+  (() => {
+    const publications = document.querySelector('.content-only-page .publications');
+    if (!publications) return;
+
+    [...publications.querySelectorAll(':scope > h2.bibliography')].forEach((heading) => {
+      const entries = heading.nextElementSibling;
+      if (entries?.matches('ol.bibliography')) entries.after(heading);
+    });
+  })();
+</script>
