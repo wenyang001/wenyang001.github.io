@@ -27,7 +27,7 @@ project_experience:
     output: ACM MM
     current: true
   - period: Jun 2025 – Nov 2025
-    title: Multimodal Human–Robot Collaboration
+    title: Human–Robot Collaboration
     organization: Schaeffler–NTU Corporate Lab · Phase III
     summary: Explored RGB- and depth-based 3D human pose estimation, benchmarked models, and developed motion retargeting for human–robot collaboration.
   - period: Dec 2024 – Jun 2025

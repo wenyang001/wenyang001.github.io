@@ -27,7 +27,7 @@ project_experience:
     output: ACM MM
     current: true
   - period: 2025年6月 – 2025年11月
-    title: 多模态人机协作
+    title: 人机协作
     organization: Schaeffler–NTU Corporate Lab · Phase III
     summary: 探索基于 RGB 与深度信息的 3D 人体姿态估计，开展模型评测并开发面向人机协作的动作重定向方法。
   - period: 2024年12月 – 2025年6月
