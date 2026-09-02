@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  Computer Vision · Multimodal AI · Industrial Perception ·
+  Computer Vision · Multimodal AI · Vision-Language Models ·
   <a href="https://www.ntu.edu.sg" target="_blank">Nanyang Technological University</a>
   <a class="lang-toggle" href="/zh/">中文</a>
 contact_line: >
@@ -14,16 +14,9 @@ contact_line: >
   <a class="contact-item" href="https://scholar.google.com/citations?user=gksRZlMAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Scholar</span></a>
 
 intro: |
-  I am a **Research Fellow** at the Hyundai–NTU–A*STAR Corporate Lab, Nanyang Technological University, working with [Assoc. Prof. Wai Kin (Adams) Kong](https://personal.ntu.edu.sg/AdamsKong/). My current research focuses on foundation-model-based computer vision and multimodal AI for industrial perception, including few-/zero-shot anomaly detection, open-vocabulary detection and segmentation, 6D pose estimation, and robotic grasping.
+  I am a **Research Fellow** at the Hyundai–NTU–A*STAR Corporate Lab, working with [Assoc. Prof. Wai Kin (Adams) Kong](https://personal.ntu.edu.sg/AdamsKong/). My research applies foundation models and multimodal learning to industrial and robotic perception, with current work spanning few-/zero-shot anomaly detection, open-vocabulary detection and segmentation, 6D pose estimation, and robotic grasping.
 
-  After earning an M.Eng. and a B.Eng. from **Chongqing University**, I received my Ph.D. in Electrical and Electronic Engineering from **Nanyang Technological University**, advised by [Prof. Lap-Pui Chau](https://www.polyu.edu.hk/eee/people/academic-staff-and-teaching-staff/prof-chau-lap-pui/) (IEEE Fellow) and [Assoc. Prof. Kim-Hui Yap](https://dr.ntu.edu.sg/entities/person/Yap-Kim-Hui). My doctoral research covered robust visual learning under degraded or incomplete data, including corrupted-media recovery, lightweight image super-resolution, and file-fragment understanding, forming the foundation for my current work in industrial and robotic perception. I have authored **23 publications** with **340+ citations** (h-index 8), including four CCF-A first-author papers.
-
-research_tags:
-  - Computer Vision
-  - Multimodal AI
-  - Vision-Language Models
-  - Visual Content Understanding
-  - Applied Machine Learning
+  I received my Ph.D. in Electrical and Electronic Engineering from **Nanyang Technological University**, advised by [Prof. Lap-Pui Chau](https://www.polyu.edu.hk/eee/people/academic-staff-and-teaching-staff/prof-chau-lap-pui/) (IEEE Fellow) and [Assoc. Prof. Kim-Hui Yap](https://dr.ntu.edu.sg/entities/person/Yap-Kim-Hui), and hold M.Eng. and B.Eng. degrees from **Chongqing University**. My work bridges robust visual learning, multimedia understanding, and real-world perception. I have authored **23 publications** with **340+ citations** (h-index 8), including four CCF-A first-author papers.
 
 project_experience_label: research projects
 project_experience:

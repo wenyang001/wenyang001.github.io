@@ -12,18 +12,35 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --group_by none %}
 
 </div>
 
 <script>
   (() => {
-    const publications = document.querySelector('.content-only-page .publications');
-    if (!publications) return;
+    const selfName = 'Wenyang Liu';
 
-    [...publications.querySelectorAll(':scope > h2.bibliography')].forEach((heading) => {
-      const entries = heading.nextElementSibling;
-      if (entries?.matches('ol.bibliography')) entries.after(heading);
+    const highlightSelf = (element) => {
+      if (element.querySelector('.self-author')) return;
+
+      const text = element.textContent;
+      const selfIndex = text.indexOf(selfName);
+      if (selfIndex < 0) return;
+
+      const self = document.createElement('strong');
+      self.className = 'self-author';
+      self.textContent = selfName;
+      element.replaceChildren(
+        document.createTextNode(text.slice(0, selfIndex)),
+        self,
+        document.createTextNode(text.slice(selfIndex + selfName.length)),
+      );
+    };
+
+    document.querySelectorAll('.publications .more-authors').forEach((element) => {
+      const observer = new MutationObserver(() => highlightSelf(element));
+      observer.observe(element, { childList: true, characterData: true, subtree: true });
+      highlightSelf(element);
     });
   })();
 </script>

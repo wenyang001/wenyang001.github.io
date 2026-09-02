@@ -30,6 +30,7 @@
       "position": "Research Fellow",
       "location": "Singapore",
       "startDate": "2025-11-01",
+      "endDate": "Present",
       "summary": "Develop vision-based robotic perception systems for reliable industrial part picking in smart manufacturing.",
       "highlights": [
         "Developed DriftAD, a visually-guided CLIP adaptation framework for few-shot anomaly detection, achieving up to 1.5-point gains in 1-shot AUROC and PRO (ACM MM 2026); extended the work to zero-shot anomaly detection with TRACE using CLIP and DINOv3 (submitted to AAAI 2027)",
@@ -66,37 +67,23 @@
     {
       "institution": "Nanyang Technological University",
       "location": "Singapore",
-      "area": "Electrical and Electronic Engineering",
-      "studyType": "Ph.D.",
+      "studyType": "Ph.D. in Electrical and Electronic Engineering",
       "startDate": "2022-01-01",
-      "endDate": "2025-11-30",
-      "courses": [
-        "Thesis: From File Fragments to Images: Vision Image Restoration and Super-Resolution Using Deep Learning",
-        "Supervisors: Prof. Chau Lap-Pui (IEEE Fellow) and Assoc. Prof. Yap Kim-Hui"
-      ]
+      "endDate": "2025-11-30"
     },
     {
       "institution": "Chongqing University",
-      "location": "China",
-      "area": "Computer Science",
-      "studyType": "M.Eng.",
+      "location": "Chongqing, China",
+      "studyType": "M.Eng. in Computer Science",
       "startDate": "2017-09-01",
-      "endDate": "2020-07-31",
-      "courses": ["Efficient computing systems, low-power video decoding, AI hardware acceleration"]
+      "endDate": "2020-07-31"
     },
     {
       "institution": "Chongqing University",
-      "location": "China",
-      "area": "Internet of Things",
-      "studyType": "B.Eng.",
+      "location": "Chongqing, China",
+      "studyType": "B.Eng. in Internet of Things Engineering",
       "startDate": "2013-09-01",
       "endDate": "2017-07-31"
-    }
-  ],
-  "awards": [
-    {
-      "title": "Chunhui Cup Innovation and Entrepreneurship Competition",
-      "awarder": "Winner, 2023"
     }
   ],
   "publications": [
