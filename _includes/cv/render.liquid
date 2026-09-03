@@ -11,283 +11,153 @@
 {% endcomment %}
 
 <style>
-  .post {
-    max-width: 1040px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .cv {
     color: var(--global-text-color);
-    font-size: 0.94rem;
-    font-weight: 400;
-    line-height: 1.55;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
-
-  .cv > .card {
-    margin: 0 0 1.1rem !important;
-    padding: 1.15rem 1.3rem !important;
+  .cv > .card,
+  .cv > .cv-section {
+    margin: 0 0 1.25rem !important;
+    padding: 1.25rem !important;
     border: 1px solid var(--global-divider-color);
     border-radius: 6px;
     background: var(--global-bg-color);
     box-shadow: none;
   }
-
-  .cv > .card:first-child {
-    margin-top: 0 !important;
-  }
-
-  .cv .card-title,
-  .cv-publications-title {
-    margin: 0 0 0.9rem;
-    color: var(--global-text-color);
-    font-size: 1.35rem;
+  .cv .card-title {
+    margin: 0 0 1rem;
+    color: var(--profile-heading);
+    font-size: 1.5rem;
     font-weight: 600 !important;
-    line-height: 1.25;
+    line-height: 1.3;
   }
-
   .cv .font-weight-light {
     font-weight: 400 !important;
   }
-
-  .cv .table {
-    margin-bottom: 0;
-    color: var(--global-text-color);
-    font-size: 0.94rem;
-  }
-
-  .cv .table td,
-  .cv .table th {
-    line-height: 1.45;
-    vertical-align: top;
-  }
-
-  .cv .table td:first-child {
-    width: 8.5rem;
-    color: var(--global-text-color);
-    font-weight: 600 !important;
-  }
-
-  .cv .table td:not(:first-child) {
-    font-weight: 400 !important;
-  }
-
-  .cv .list-group-item {
-    padding: 0.75rem 0;
-    border: 0;
-    background: transparent;
+  .cv .cv-entries {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
-
-  .cv .list-group-item + .list-group-item {
-    margin-top: 0.25rem;
-    padding-top: 0.95rem;
-  }
-
-  .cv .list-group-item::marker {
-    content: '';
-  }
-
-  .cv ul.list-group {
-    margin: 0;
-    padding: 0;
-  }
-
-  .cv .list-group-item:first-child {
-    padding-top: 0.1rem;
-  }
-
-  .cv .list-group-item > .row {
+  .cv-entry {
     display: grid;
-    grid-template-columns: 7.75rem minmax(0, 1fr);
-    gap: 1.2rem;
-    align-items: start;
-    margin: 0;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
-
-  .cv .list-group-item > .row > [class*='col-'] {
-    width: auto;
-    max-width: none;
-    margin-top: 0 !important;
-    padding: 0;
-    transform: none !important;
+  .cv-entry:last-child {
+    margin-bottom: 0;
   }
-
-  .cv .list-group-item > .row > .col-sm-2 {
-    grid-column: 1;
+  .cv-entry-meta {
+    padding-top: 0.05rem;
   }
-
-  .cv .list-group-item > .row > .col-sm-10 {
-    grid-column: 2;
-  }
-
-  .cv .list-group-item > .row > .col-sm-12 {
-    grid-column: 1 / -1;
-  }
-
-  .cv .date-column {
-    text-align: left !important;
-  }
-
-  .cv h6 {
-    margin-top: 0;
-    margin-bottom: 0.18rem;
-    color: var(--global-text-color);
-    font-size: 0.93rem !important;
-    font-weight: 400;
-    line-height: 1.42;
-  }
-
-  .cv h6.title {
-    font-size: 1rem !important;
-    font-weight: 600 !important;
-    line-height: 1.38;
-  }
-
-  .cv h6[style*='italic'] {
-    color: var(--global-text-color-light);
-  }
-
-  .cv p,
-  .cv .item,
-  .cv .skill-item,
-  .cv .language-item {
-    font-size: 0.91rem;
-    line-height: 1.55;
-  }
-
-  .cv p {
-    margin-bottom: 0.35rem;
-  }
-
-  .cv ul.items {
-    margin: 0.42rem 0 0;
-    padding-left: 1.25rem;
-  }
-
-  .cv ul.items li {
-    margin-bottom: 0.32rem;
-    padding-left: 0.15rem;
-  }
-
-  .cv ul.items li::marker {
-    color: var(--global-text-color-light);
-  }
-
-  .cv .skill-item,
-  .cv .language-item {
-    padding: 0.28rem 0;
-  }
-
-  body .post .cv table.table-cv .badge,
-  body .post .cv .badge.danger-color-dark {
-    display: inline-flex;
-    min-width: 4.7rem !important;
-    justify-content: center;
-    padding: 0.14rem 0.48rem !important;
-    border: 0;
+  .cv-entry-date {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
     border-radius: 3px;
-    background-color: rgba(181, 9, 172, 0.08) !important;
-    color: var(--global-theme-color) !important;
-    font-size: 0.78rem;
-    font-weight: 600 !important;
-    line-height: 1.35;
+    background: var(--profile-accent-soft);
+    color: var(--global-theme-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
   }
-
-  .cv table.table-cv,
-  .cv table.table-cv tbody,
-  .cv table.table-cv tr,
-  .cv table.table-cv td,
-  .cv table.table-cv th {
-    border: 0 !important;
-    background: transparent !important;
+  .cv .cv-entry-location {
+    margin: 0.4rem 0 0;
+    color: var(--global-text-color-light);
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
-
-  .cv table.table-cv td,
-  .cv table.table-cv th {
-    padding: 0 !important;
+  .cv-entry-location i {
+    margin-right: 0.15rem;
   }
-
-  .cv p.location {
+  .cv-entry-body {
+    min-width: 0;
+  }
+  .cv-entry h3 {
+    margin: 0 0 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+  .cv .cv-entry-organization {
+    margin: 0;
+    font-size: 0.925rem;
+    line-height: 1.5;
+  }
+  .cv .cv-entry-summary p {
     margin: 0.3rem 0 0;
     color: var(--global-text-color-light);
-    font-size: 0.76rem;
-    line-height: 1.35;
+    font-size: 0.925rem;
+    line-height: 1.6;
   }
-
-  .cv p.location .iconlocation {
-    color: var(--global-theme-color);
+  .cv .cv-entry-highlights {
+    margin: 0.5rem 0 0;
+    padding-left: 1.1rem;
+    list-style: disc;
   }
-
-  .cv .ml-1,
-  .cv .ml-md-4,
-  body .post .cv h6.ml-1,
-  body .post .cv h6.ml-md-4 {
-    margin-left: 0 !important;
+  .cv-entry-highlights li {
+    margin: 0 0 0.4rem;
+    padding-left: 0.2rem;
+    font-size: 0.925rem;
+    line-height: 1.6;
   }
-
-  html body .post article .cv .list-group-item > .row > .col-sm-10 > h6[class*='ml-'] {
-    margin-left: 0 !important;
+  .cv-entry-highlights li::marker {
+    color: var(--global-text-color-light);
   }
-
-  @media (min-width: 768px) {
-    html body .post article .cv .list-group-item > .row > .col-sm-10 > h6[class*='ml-'] {
-      width: calc(100% + 1.5rem);
-      transform: translateX(-1.5rem);
-    }
+  .cv-entry-highlights strong {
+    color: var(--profile-heading);
+    font-weight: 600;
   }
-
+  .cv .list-group {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .cv .list-group-item {
+    padding: 0.35rem 0;
+    border: 0;
+    background: none;
+    list-style: none;
+  }
+  .cv .skill-item,
+  .cv .language-item {
+    font-size: 0.925rem;
+    line-height: 1.6;
+  }
+  .cv .table {
+    color: var(--global-text-color);
+    font-size: 0.925rem;
+  }
   @media (max-width: 575px) {
-    .cv {
-      font-size: 0.91rem;
+    .cv > .card,
+    .cv > .cv-section {
+      padding: 1rem !important;
     }
-
-    .cv > .card {
-      margin-bottom: 0.85rem !important;
-      padding: 0.95rem 1rem !important;
+    .cv .card-title {
+      font-size: 1.5rem;
     }
-
-    .cv .card-title,
-    .cv-publications-title {
-      margin-bottom: 0.72rem;
-      font-size: 1.22rem;
-      line-height: 1.3;
-    }
-
-    .cv .table td:first-child {
-      width: 6.5rem;
-    }
-
-    .cv .date-column,
-    .cv .list-group-item .col-sm-2 {
-      margin-bottom: 0.2rem;
-      text-align: left !important;
-      transform: none !important;
-    }
-
-    .cv .list-group-item > .row {
+    .cv-entry {
       grid-template-columns: minmax(0, 1fr);
-      gap: 0.3rem;
+      gap: 0.45rem;
     }
-
-    .cv ul.items {
-      padding-left: 1.15rem;
+    .cv-entry-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem 0.75rem;
     }
-
-    .cv .list-group-item > .row > .col-sm-2,
-    .cv .list-group-item > .row > .col-sm-10,
-    .cv .list-group-item > .row > .col-sm-12 {
-      grid-column: 1;
-    }
-
-    .cv .list-group-item + .list-group-item {
-      margin-top: 0.2rem;
-      padding-top: 0.8rem;
+    .cv .cv-entry-location {
+      margin: 0;
     }
   }
 </style>
 
 <div class="post">
+  {% if page.cv_hide_header %}
+    <h1 class="sr-only">{{ page.title }}</h1>
+  {% endif %}
   {% unless page.cv_hide_header %}
     <header class="post-header">
       <h1 class="post-title">
@@ -479,8 +349,8 @@
 
         <!-- Contact Information -->
         {% if site.data.resume.basics and page.cv_hide_contact != true %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Contact Information</h2>
             {% assign basics = site.data.resume.basics %}
             <table class="table table-cv table-sm table-borderless">
               {% if basics.name %}
@@ -534,8 +404,8 @@
 
         <!-- Summary -->
         {% if site.data.resume.basics.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Professional Summary</h2>
             <p>{{ site.data.resume.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
@@ -547,11 +417,11 @@
         {% assign combined_experience = work | concat: vol %}
         {% if combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
-          <div class="card cv-section-experience mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
+          <div class="cv-section cv-section-experience">
+            <h2 class="card-title font-weight-medium">Experience</h2>
             <div>
               {% assign entries = combined_experience %}
-              {% include cv/experience.liquid %}
+              {% include cv/profile_entries.liquid entries=entries kind='experience' %}
             </div>
           </div>
         {% endif %}
@@ -559,11 +429,11 @@
         <!-- Education -->
         {% if site.data.resume.education.size > 0 %}
           <a class="anchor" id="education"></a>
-          <div class="card cv-section-education mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Education</h3>
+          <div class="cv-section cv-section-education">
+            <h2 class="card-title font-weight-medium">Education</h2>
             <div>
               {% assign entries = site.data.resume.education %}
-              {% include cv/education.liquid %}
+              {% include cv/profile_entries.liquid entries=entries kind='education' %}
             </div>
           </div>
         {% endif %}
@@ -571,8 +441,8 @@
         <!-- Awards -->
         {% if site.data.resume.awards.size > 0 %}
           <a class="anchor" id="awards"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Awards</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Awards</h2>
             <div>
               {% assign entries = site.data.resume.awards %}
               {% include cv/awards.liquid %}
@@ -583,13 +453,13 @@
         <!-- Publications -->
         {% if site.data.resume.publications.size > 0 %}
           <a class="anchor" id="publications"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title cv-publications-title font-weight-medium">
+          <div class="cv-section">
+            <h2 class="card-title cv-publications-title font-weight-medium">
               {{ page.cv_publications_label | default: 'Publications' }}
-            </h3>
+            </h2>
             <div>
               {% assign entries = site.data.resume.publications %}
-              {% include cv/publications.liquid %}
+              {% include cv/profile_entries.liquid entries=entries kind='publications' %}
             </div>
           </div>
         {% endif %}
@@ -597,8 +467,8 @@
         <!-- Skills -->
         {% if site.data.resume.skills.size > 0 %}
           <a class="anchor" id="skills"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Skills</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Skills</h2>
             <div>
               {% assign entries = site.data.resume.skills %}
               {% include cv/skills.liquid %}
@@ -609,8 +479,8 @@
         <!-- Languages -->
         {% if site.data.resume.languages.size > 0 %}
           <a class="anchor" id="languages"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Languages</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Languages</h2>
             <div>
               {% assign entries = site.data.resume.languages %}
               {% include cv/languages.liquid %}
@@ -621,8 +491,8 @@
         <!-- Interests -->
         {% if site.data.resume.interests.size > 0 %}
           <a class="anchor" id="interests"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Interests</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Interests</h2>
             <div>
               {% assign entries = site.data.resume.interests %}
               {% include cv/interests.liquid %}
@@ -633,8 +503,8 @@
         <!-- Certificates -->
         {% if site.data.resume.certificates.size > 0 %}
           <a class="anchor" id="certificates"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Certificates</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Certificates</h2>
             <div>
               {% assign entries = site.data.resume.certificates %}
               {% include cv/certificates.liquid %}
@@ -645,8 +515,8 @@
         <!-- Projects -->
         {% if site.data.resume.projects.size > 0 %}
           <a class="anchor" id="projects"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Projects</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">Projects</h2>
             <div>
               {% assign entries = site.data.resume.projects %}
               {% include cv/projects.liquid %}
@@ -657,8 +527,8 @@
         <!-- References -->
         {% if site.data.resume.references.size > 0 %}
           <a class="anchor" id="references"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">References</h3>
+          <div class="cv-section">
+            <h2 class="card-title font-weight-medium">References</h2>
             <div>
               {% assign entries = site.data.resume.references %}
               {% include cv/references.liquid %}

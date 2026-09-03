@@ -8,6 +8,8 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+<h1 class="sr-only">{{ page.title }}</h1>
+
 {% include publication_list_style.html %}
 
 <div class="publications">

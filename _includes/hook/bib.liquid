@@ -1,3 +1,12 @@
+{% if proceedings contains entry.type %}
+  {% assign entrytype = entrytype | replace_first: '<em>In ', '<em>' %}
+{% endif %}
+{% if entry.co_first %}
+  <div class="publication-author-note">* Co-first authors</div>
+{% endif %}
+{% if entry.author_note %}
+  <div class="publication-author-note">{{ entry.author_note }}</div>
+{% endif %}
 {% if entry.ccf or entry.cas or entry.jcr or entry.citations %}
   <div class="rankings">
     {% if entry.ccf %}

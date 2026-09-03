@@ -31,10 +31,11 @@
       "location": "Singapore",
       "startDate": "2025-11-01",
       "endDate": "Present",
-      "summary": "Develop vision-based robotic perception systems for reliable industrial part picking in smart manufacturing.",
+      "summary": "Foundation models for industrial inspection and robotic part picking.",
       "highlights": [
-        "Developed DriftAD, a visually-guided CLIP adaptation framework for few-shot anomaly detection, achieving up to 1.5-point gains in 1-shot AUROC and PRO (ACM MM 2026); extended the work to zero-shot anomaly detection with TRACE using CLIP and DINOv3 (submitted to AAAI 2027)",
-        "Built an open-vocabulary perception and grasping pipeline for unseen object categories, validated on industrial parts and demonstrated through on-site robotic grasping; filed a related patent"
+        "Developed **DriftAD** for few-shot anomaly detection with CLIP, achieving up to **1.5-point gains** in 1-shot AUROC and PRO. First-author paper at **ACM Multimedia 2026**.",
+        "Extended to zero-shot anomaly detection with **TRACE**, using CLIP and DINOv3; **submitted to AAAI 2027**.",
+        "Built an open-vocabulary perception and grasping pipeline for unfamiliar object categories. Validated on industrial parts and demonstrated in on-site robotic grasping; filed a related patent."
       ]
     },
     {
@@ -43,11 +44,11 @@
       "location": "Singapore",
       "startDate": "2021-01-01",
       "endDate": "2025-10-31",
-      "summary": "Conducted research on image/video restoration, lightweight super-resolution, and corrupted multimedia recovery.",
+      "summary": "Image and video restoration, efficient super-resolution, and multimedia data understanding.",
       "highlights": [
-        "Developed a two-stage framework for bitstream-corrupted JPEG restoration reaching 38.92 dB PSNR on 2K images (+5.52 dB over EPDN); published as first author at CVPR 2023, extended through a collaborative NeurIPS 2023 study on corrupted-video recovery",
-        "Designed PromptSR, a 0.78M-parameter lightweight super-resolution model using cascade prompting, improving baselines by up to 0.48 dB (IEEE TMM 2026); extended to adaptive superpixel token aggregation in AsTaSR",
-        "Built Byte2Image and ByteNet to classify raw file fragments without extensions or metadata by fusing byte-sequence and visual representations, improving accuracy by up to 12.2% across two benchmarks (IEEE TMM 2024)"
+        "Developed a two-stage method to restore damaged JPEG images, reaching **38.92 dB PSNR** on 2K images (+5.52 dB over EPDN). First-author **CVPR 2023** paper; contributed to a related video-recovery study at NeurIPS 2023.",
+        "Designed **PromptSR**, a **0.78M-parameter** super-resolution model with gains of up to 0.48 dB over baselines (**IEEE TMM 2026**). Extended this work to adaptive superpixel token aggregation in AsTaSR.",
+        "Built **Byte2Image and ByteNet** to classify raw file fragments without file extensions or metadata. Fused byte and image representations, improving accuracy by up to **12.2%** across two benchmarks (**IEEE TMM 2024**)."
       ]
     },
     {
@@ -56,10 +57,10 @@
       "location": "Chongqing, China",
       "startDate": "2017-09-01",
       "endDate": "2020-07-31",
-      "summary": "Researched energy-efficient video processing and machine learning acceleration.",
+      "summary": "Energy-efficient video decoding and deep learning hardware.",
       "highlights": [
-        "Parallelized H.264 decoding at the task level with dynamic voltage and frequency scaling, improving decoding speed by 27-32% while reducing energy consumption by 23-25% across 720p-2160p video (ICPADS 2018)",
-        "Developed HolyLight, a nanophotonic accelerator for data-center CNN workloads achieving 13× higher throughput per watt than a ReRAM baseline, now cited 140+ times (DATE 2019)"
+        "Parallelized **H.264 decoding** with dynamic voltage and frequency scaling: **27–32% faster decoding** and **23–25% lower energy use** across 720p–2160p video (**ICPADS 2018**).",
+        "Contributed to **HolyLight**, a nanophotonic CNN accelerator achieving **13× higher throughput per watt** than a ReRAM baseline (**DATE 2019**). Second author, with my master's advisor listed first; 140+ citations."
       ]
     }
   ],
@@ -127,7 +128,7 @@
       "title": "HolyLight: A Nanophotonic Accelerator for Deep Learning in Data Centers",
       "releaseDate": "2019",
       "publisher": "Design, Automation & Test in Europe Conference (DATE, CCF-B)",
-      "summary": "First student author (second author; supervisor listed first). A nanophotonic accelerator achieving 13× higher throughput per watt than a ReRAM baseline; 140+ citations."
+      "summary": "Second author; my master's advisor is the first author. A nanophotonic accelerator achieving 13× higher throughput per watt than a ReRAM baseline; 140+ citations."
     },
     {
       "title": "Fine-Grained Task-Level Parallel and Low-Power H.264 Decoding in Multi-Core Systems",

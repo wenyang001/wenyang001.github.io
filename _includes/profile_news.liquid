@@ -1,0 +1,17 @@
+<ul class="news-list">
+  {% assign recent_news = site.news | sort: 'date' | reverse %}
+  {% for item in recent_news limit: page.announcements.limit %}
+    <li>
+      <time datetime="{{ item.date | date: '%Y-%m-%d' }}">
+        {%- if page.lang == 'zh-CN' %}{{ item.date | date: '%Y年%-m月%-d日' }}{% else %}{{ item.date | date: '%b %d, %Y' }}{% endif -%}
+      </time>
+      <div>
+        {% if page.lang == 'zh-CN' %}
+          {{ item.zh | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% else %}
+          {{ item.content | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

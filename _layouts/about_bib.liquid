@@ -23,61 +23,129 @@
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
         {% assign author_array_limit = site.max_author_limit %}
       {% endif %}
-      {% for author in entry.author_array limit: author_array_limit %}
-        {% if forloop.first == false %}
+      {%- for author in entry.author_array limit: author_array_limit -%}
+        {%- if forloop.first == false -%}
           {% if forloop.last and author_array_limit == author_array_size %} and {% else %}, {% endif %}
-        {% endif %}
-        {% assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
-        {% assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' %}
-        {% if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first %}
-          <strong>{{ author.first }} {{ author_last_html }}</strong>
-        {% else %}
-          {{ author.first }} {{ author_last_html }}
-        {% endif %}
-      {% endfor %}
-      {% assign more_authors = author_array_size | minus: author_array_limit %}
-      {% if more_authors > 0 %}
-        , and <span class="more-authors">{{ more_authors }} more author{% if more_authors > 1 %}s{% endif %}</span>
-      {% endif %}
+        {%- endif -%}
+        {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {%- if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first -%}
+          <strong>
+            {{- author.first }}
+            {{ author_last_html -}}
+          </strong>
+        {%- else -%}
+          {{ author.first }}
+          {{ author_last_html }}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- assign more_authors = author_array_size | minus: author_array_limit -%}
+      {%- if more_authors > 0 -%}
+        ,
+        {% capture authors_label %}{% if page.lang == 'zh-CN' %}另 {{ more_authors }} 位作者{% else %}{{ more_authors }} more author{% if more_authors > 1 %}s{% endif %}{% endif %}{% endcapture %}
+        <span class="author-extra" id="authors-{{ entry.key }}" hidden>
+          {%- for author in entry.author_array offset: author_array_limit -%}
+            {%- unless forloop.first -%}, {% endunless -%}
+            {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+            {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+            {%- if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first -%}
+              <strong>
+                {{- author.first }}
+                {{ author_last_html -}}
+              </strong>
+            {%- else -%}
+              {{ author.first }}
+              {{ author_last_html }}
+            {%- endif -%}
+          {%- endfor -%}
+        </span>
+        <button
+          type="button"
+          class="author-toggle"
+          aria-expanded="false"
+          aria-controls="authors-{{ entry.key }}"
+          data-collapsed-label="{{ authors_label }}"
+          data-expanded-label="{% if page.lang == 'zh-CN' %}收起{% else %}show less{% endif %}"
+        >
+          {{ authors_label }}
+        </button>
+      {%- endif %}
     </div>
-    {% if entry.co_first %}<div class="about-publication-author-note">* Co-first authors</div>{% endif %}
-    {% if entry.author_note %}<div class="about-publication-author-note">{{ entry.author_note }}</div>{% endif %}
+    {% if entry.co_first %}
+      <div class="about-publication-author-note">
+        {% if page.lang == 'zh-CN' %}* 共同第一作者{% else %}* Co-first authors{% endif %}
+      </div>
+    {% endif %}
+    {% if entry.author_note %}
+      <div class="about-publication-author-note">
+        {% if page.lang == 'zh-CN' %}{{ entry.author_note_zh | default: entry.author_note }}{% else %}{{ entry.author_note }}{% endif %}
+      </div>
+    {% endif %}
 
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     <div class="periodical">
-      {% if entry.type == 'article' %}
+      {%- if entry.type == 'article' -%}
         <em>{{ entry.journal }}</em>
-      {% elsif proceedings contains entry.type %}
+      {%- elsif proceedings contains entry.type -%}
         <em>{{ entry.booktitle }}</em>
-      {% endif %}
-      {% if entry.year %}, {{ entry.year }}{% endif %}
+      {%- endif -%}
+      {%- if entry.year %}, {{ entry.year }}{% endif %}
     </div>
 
     <div class="about-publication-meta">
-      {% if entry.abbr %}<span class="about-publication-venue">{{ entry.abbr }}</span>{% endif %}
+      {% if entry.abbr -%}
+        <span class="about-publication-venue">{{ entry.abbr }}</span>
+      {%- endif %}
       {% if entry.ccf or entry.cas or entry.jcr or entry.citations %}
         <div class="rankings">
-          {% if entry.ccf %}<span class="ranking-badge">CCF {{ entry.ccf }}</span>{% endif %}
-          {% if entry.cas %}<span class="ranking-badge">CAS {{ entry.cas }}</span>{% endif %}
-          {% if entry.jcr %}<span class="ranking-badge">JCR {{ entry.jcr }}</span>{% endif %}
-          {% if entry.citations %}<span class="ranking-badge">{{ entry.citations }} citations</span>{% endif %}
+          {% if entry.ccf -%}
+            <span class="ranking-badge">CCF {{ entry.ccf }}</span>
+          {%- endif %}
+          {% if entry.cas -%}
+            <span class="ranking-badge">CAS {{ entry.cas }}</span>
+          {%- endif %}
+          {% if entry.jcr -%}
+            <span class="ranking-badge">JCR {{ entry.jcr }}</span>
+          {%- endif %}
+          {% if entry.citations -%}
+            <span class="ranking-badge">
+              {{- entry.citations }}
+              {% if page.lang == 'zh-CN' %}次引用{% else %}citations{% endif -%}
+            </span>
+          {%- endif %}
         </div>
       {% endif %}
       {% if entry.abstract or entry.bibtex_show %}
         <div class="links">
-          {% if entry.abstract %}<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>{% endif %}
-          {% if entry.bibtex_show %}<a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>{% endif %}
+          {% if entry.abstract -%}
+            <a
+              class="abstract btn btn-sm z-depth-0"
+              role="button"
+              tabindex="0"
+              aria-label="{% if page.lang == 'zh-CN' %}摘要{% else %}Abstract{% endif %}: {{ entry.title | escape }}"
+              aria-expanded="false"
+              >Abs</a
+            >
+          {%- endif %}
+          {% if entry.bibtex_show -%}
+            <a class="bibtex btn btn-sm z-depth-0" role="button" tabindex="0" aria-label="BibTeX: {{ entry.title | escape }}" aria-expanded="false"
+              >Bib</a
+            >
+          {%- endif %}
         </div>
-        {% if entry.abstract %}
-          <div class="abstract hidden"><p>{{ entry.abstract }}</p></div>
-        {% endif %}
-        {% if entry.bibtex_show %}
-          <div class="bibtex hidden">
-            {% highlight bibtex %}{{- entry.bibtex | hideCustomBibtex -}}{% endhighlight %}
-          </div>
-        {% endif %}
+      {% endif %}
+      {% if entry.abstract %}
+        <div class="abstract hidden">
+          <p>{{ entry.abstract }}</p>
+        </div>
+      {% endif %}
+      {% if entry.bibtex_show %}
+        <div class="bibtex hidden">
+          {% highlight bibtex %}
+          {{- entry.bibtex | hideCustomBibtex -}}
+          {% endhighlight %}
+        </div>
       {% endif %}
     </div>
-
   </div>
 </div>

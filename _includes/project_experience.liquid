@@ -1,15 +1,20 @@
 <div class="project-grid" role="list" aria-label="{{ page.project_experience_label | default: 'Project experience' }}">
   {% for project in include.projects %}
     <div class="project-item{% if project.current %} is-current{% endif %}" role="listitem">
-      <time>{{ project.period }}</time>
       <h3>{{ project.title }}</h3>
-      <p>{{ project.organization }}</p>
+      <p class="project-meta">
+        <time>{{ project.period }}</time>
+        <span class="project-organization" title="{{ project.organization | escape }}">
+          {% if project.organization_prefix %}{{ project.organization_prefix }} {% endif -%}
+          {{- project.organization_short | default: project.organization }}
+        </span>
+      </p>
       {% if project.summary %}
         <p class="project-summary">{{ project.summary }}</p>
       {% endif %}
       {% if project.output %}
         {% assign outputs = project.output | split: ' · ' %}
-        <div class="project-outputs" aria-label="Selected outputs">
+        <div class="project-outputs" aria-label="{% if page.lang == 'zh-CN' %}代表成果{% else %}Selected outputs{% endif %}">
           {% for output in outputs -%}
             <span>{{ output }}</span>
           {%- endfor %}

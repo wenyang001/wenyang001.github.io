@@ -2,57 +2,59 @@
 layout: default
 ---
 {% include publication_list_style.html %}
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+<div class="post about-page">
+  <div class="about-lead">
+    {% if page.profile %}
+      <aside class="profile">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: 768px) 210px, 190px{% endcapture %}
+          {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Wenyang Liu" cache_bust=true %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </aside>
+    {% endif %}
+
+    <header class="post-header">
+      <div class="profile-heading">
+        <h1 class="post-title">
+          {% if site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+            {{ site.last_name }}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        {% if page.language_url -%}
+          <a class="lang-toggle" href="{{ page.language_url | relative_url }}" lang="{{ page.language_code }}">{{ page.language_label }}</a>
+        {%- endif %}
+      </div>
+      <p class="desc">{{ page.subtitle }}</p>
+      {% if page.contact_line %}
+        <p class="header-contact">{{ page.contact_line }}</p>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-    {% if page.contact_line %}<p class="header-contact">{{ page.contact_line }}</p>{% endif %}
-  </header>
+    </header>
+
+    <div class="about-summary">
+      {{ page.intro | markdownify }}
+    </div>
+  </div>
 
   <article>
-    <div class="about-intro clearfix">
-      {% if page.profile %}
-        <aside class="profile">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: 768px) 230px, 170px{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
-          {% endif %}
-          {% if page.profile.more_info %}
-            <div class="more-info">{{ page.profile.more_info }}</div>
-          {% endif %}
-        </aside>
-      {% endif %}
-
-      <div class="about-summary">{{ page.intro | markdownify }}</div>
-      <div class="about-body">{{ content }}</div>
-    </div>
-
-    {% if page.research_tags %}
-      <div class="research-tags" aria-label="Research interests">
-        {% for tag in page.research_tags %}
-          <span>{{ tag }}</span>
-        {% endfor %}
-      </div>
-    {% endif %}
+    {{ content }}
 
     {% if page.announcements and page.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">{{ page.announcements_label | default: 'news' }}</a>
       </h2>
-      {% include news.liquid limit=true %}
+      {% include profile_news.liquid %}
     {% endif %}
 
     {% if page.project_experience %}

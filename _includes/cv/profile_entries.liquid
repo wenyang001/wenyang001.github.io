@@ -1,0 +1,41 @@
+<ul class="cv-entries">
+  {% for entry in include.entries %}
+    <li class="cv-entry">
+      <div class="cv-entry-meta">
+        <span class="cv-entry-date">
+          {% if include.kind == 'publications' %}
+            {{ entry.releaseDate }}
+          {% else %}
+            {{ entry.startDate | date: '%Y' }} &ndash; {% if entry.endDate == 'Present' %}Present{% else %}{{ entry.endDate | date: '%Y' }}{% endif %}
+          {% endif %}
+        </span>
+        {% if entry.location %}
+          <p class="cv-entry-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ entry.location }}</p>
+        {% endif %}
+      </div>
+      <div class="cv-entry-body">
+        {% case include.kind %}
+          {% when 'experience' %}
+            <h3>{{ entry.position }}</h3>
+            <p class="cv-entry-organization">{{ entry.name }}</p>
+          {% when 'education' %}
+            <h3>{{ entry.studyType }}</h3>
+            <p class="cv-entry-organization">{{ entry.institution }}</p>
+          {% when 'publications' %}
+            <h3>{{ entry.title }}</h3>
+            <p class="cv-entry-organization">{{ entry.publisher }}</p>
+        {% endcase %}
+        {% if entry.summary %}
+          <div class="cv-entry-summary">{{ entry.summary | markdownify }}</div>
+        {% endif %}
+        {% if entry.highlights %}
+          <ul class="cv-entry-highlights">
+            {% for highlight in entry.highlights %}
+              <li>{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

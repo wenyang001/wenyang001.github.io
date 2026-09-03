@@ -1,27 +1,103 @@
 <style>
-  /* Profile image: constrain size, remove all borders/shadows/backgrounds */
-  .profile,
-  .profile div,
-  .profile figure {
-    max-width: 160px !important;
-    width: 160px !important;
-    box-shadow: none !important;
-    border: none !important;
-    background: transparent !important;
+  :root,
+  html[data-theme="light"] {
+    --global-bg-color: #ffffff;
+    --global-text-color: #27272d;
+    --global-text-color-light: #62636c;
+    --global-theme-color: #b509ac;
+    --global-hover-color: #8e0787;
+    --global-divider-color: #e4e3e8;
+    --profile-accent-soft: #f9edf8;
+    --profile-venue-bg: #f1dff0;
+    --profile-accent-border: #eab9e6;
+    --profile-surface: #fafafa;
+    --profile-heading: #202127;
+    --profile-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
   }
-  .profile img,
-  .profile picture img,
-  .profile img.img-fluid,
-  .profile img.z-depth-1,
-  .profile .z-depth-1,
-  img[src*="prof_pic"] {
-    width: 160px !important;
-    max-width: 160px !important;
-    height: auto !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    background: transparent !important;
-    -webkit-box-shadow: none !important;
+
+  html[data-theme="dark"] {
+    --global-bg-color: #1c1d21;
+    --global-text-color: #e9e9ee;
+    --global-text-color-light: #b4b5c0;
+    --global-theme-color: #ed91e5;
+    --global-hover-color: #f5b8f0;
+    --global-divider-color: #38383f;
+    --profile-accent-soft: #382334;
+    --profile-venue-bg: #472c42;
+    --profile-accent-border: #74406c;
+    --profile-surface: #222328;
+    --profile-heading: #f4f4f6;
+  }
+
+  body {
+    font-family: var(--profile-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: var(--global-text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .navbar {
+    font-family: var(--profile-font);
+    letter-spacing: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--profile-heading);
+  }
+
+  a {
+    text-underline-offset: 0.18em;
+  }
+
+  :is(a, button, summary):focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 4px;
+  }
+
+  #navbar {
+    box-shadow: none;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  #navbar .navbar-brand {
+    font-size: 1.1rem;
+  }
+  #navbar .nav-link {
+    font-size: 0.92rem;
+  }
+
+  .post {
+    max-width: 1040px;
+    margin-inline: auto;
+  }
+
+  .post .more-authors {
+    cursor: pointer;
+    text-decoration: underline dotted;
+    text-underline-offset: 0.2em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+    }
   }
 </style>
