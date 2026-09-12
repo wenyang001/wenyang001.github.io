@@ -96,6 +96,9 @@
       {% if entry.abbr -%}
         <span class="about-publication-venue">{{ entry.abbr }}</span>
       {%- endif %}
+      {% if entry.award -%}
+        <span class="ranking-badge about-publication-award">{{ entry.award_name | default: 'Oral' }}</span>
+      {%- endif %}
       {% if entry.ccf or entry.cas or entry.jcr or entry.citations %}
         <div class="rankings">
           {% if entry.ccf -%}
